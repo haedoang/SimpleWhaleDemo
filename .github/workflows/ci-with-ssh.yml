@@ -13,6 +13,6 @@ jobs:
         uses: garygrossgarten/github-action-ssh@v0.5.0
         with: 
           command: ls -al
-          host: ${{ secrets.REMOTE_HOST }}
+          host: ${{ secrets.REMOTE_HOST }}https://github.com/haedoang/SimpleWhaleDemo/blob/master/.github/workflows/ci-with-ssh
           username: ${{ secrets.REMOTE_USERNAME }}
           privateKey: ${{ secrets.REMOTE_KEY }}
