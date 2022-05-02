@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: show remote dirs
-        uses: garygrossgarten/github-action-ssh@release
+        uses: garygrossgarten/github-action-ssh@v0.5.0
         with: 
           command: ls -al
           host: ${{ secrets.REMOTE_HOST }}
