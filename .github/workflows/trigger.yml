@@ -1,0 +1,11 @@
+name: Trigger 
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: 
+  schedule:
+    - cron: "*/1 * * * *"
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo time
+        run: echo "매 1분마다 실행"
